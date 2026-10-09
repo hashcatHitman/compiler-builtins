@@ -22,7 +22,7 @@
       "matchManagers": ["github-actions"],
       "matchDepTypes": ["workflow"],
       "matchPackageNames": ["rust-lang/josh-sync"],
-      "pinDigests": false
+      "enabled": false
     },
     {
       "matchCategories": ["rust"],
