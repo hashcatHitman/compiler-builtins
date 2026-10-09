@@ -19,13 +19,6 @@
   ],
   "packageRules": [
     {
-      "matchManagers": ["github-actions"],
-      "matchDepTypes": ["workflow"],
-      "matchPackageNames": ["rust-lang/josh-sync"],
-      "matchCurrentValue": "main",
-      "enabled": false
-    },
-    {
       "matchCategories": ["rust"],
       "matchJsonata": ["isBreaking != true"],
       // Disable non-breaking change updates because they
@@ -36,6 +29,13 @@
       "matchManagers": ["github-actions"],
       "commitMessagePrefix": "ci:",
       "groupName": "Github Actions"
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "matchDepTypes": ["workflow"],
+      "matchPackageNames": ["rust-lang/josh-sync"],
+      "matchCurrentValue": "main",
+      "enabled": false
     },
     {
       "matchManagers": ["custom.regex"],
