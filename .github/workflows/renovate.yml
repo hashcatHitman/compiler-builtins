@@ -36,5 +36,5 @@ jobs:
         env:
           RENOVATE_EXTRA_FLAGS: "hashcatHitman/compiler-builtins"
         with:
-          configurationFile: .github/renovate.json5
+          configurationFile: .github/renovate.json
           token: ${{ secrets.RENOVATE_TOKEN }}
