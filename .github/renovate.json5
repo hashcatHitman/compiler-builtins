@@ -3,7 +3,7 @@
   extends: [
     "config:recommended",
     ":maintainLockFilesMonthly",
-    "helpers:pinGitHubActionDigestsToSemver"
+    "helpers:pinGitHubActionDigestsToSemver",
   ],
   commitMessagePrefix: "deps:",
   customManagers: [
@@ -27,8 +27,6 @@
     },
     {
       matchManagers: ["github-actions"],
-      // Every month
-      schedule: "* 0 1 * *",
       commitMessagePrefix: "ci:",
       groupName: "Github Actions",
     },
